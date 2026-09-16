@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transit Sensitivity &mdash; Ryan Vilim</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <p class="site-title"><a href="index.html">Ryan Vilim</a></p>
+  <p class="site-tagline">Data Science!</p>
+  <nav class="site-nav">
+    <a href="index.html">About Me</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Transit Sensitivity</h1>
+
+  <p>During my Ph.D., I took on an extra teaching job at a secondary campus at the University of Toronto in Scarborough, Ontario. This required commuting approximately an hour and a half each way by bus and subway. I noticed that if I left my house at 7:10am I would arrive with 40 minutes to spare, whereas if I left any later I would nearly be late.</p>
+
+  <p>The reason for this sensitivity was because I would miss a crucial bus at the end of my subway ride. I realized an analogous way to think of this is:</p>
+
+  <blockquote>
+    <p>Where will an imperfect subway and bus system have the most impact on a users journey?</p>
+    <p>If the bus is two minutes late at the start of my trip, which journeys in the city does this affect the most?</p>
+  </blockquote>
+
+  <p>As a fun weekend project, I used Open Trip Planner and the Toronto Transit Commission's open data schedule to plan routes from every transit stop in Toronto, to every other transit stop in Toronto, every minute for an hour during a normal Tuesday rush hour. The quantity which I deemed the "transit sensitivity" was simply the standard deviation of the trip times over each hour, averaged over all trips.</p>
+
+  <p>I showed that the area of Toronto around the Scarborough campus of the University of Toronto is indeed an area of high transit sensitivity!</p>
+</main>
+
+<footer class="site-footer">
+  <a href="https://github.com/rvilim">GitHub</a>
+  <a href="https://www.linkedin.com/in/ryanvilim">LinkedIn</a>
+</footer>
+
+</body>
+</html>

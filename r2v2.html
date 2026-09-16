@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simplified Turbulence &mdash; Ryan Vilim</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <p class="site-title"><a href="index.html">Ryan Vilim</a></p>
+  <p class="site-tagline">Data Science!</p>
+  <nav class="site-nav">
+    <a href="index.html">About Me</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Simplified Turbulence in a 2D Planetary Core</h1>
+
+  <p>The magnetic field of the Earth and planets is created by the movement of an electrically conducting fluid in the deep planetary interior. In the case of the Earth, this is liquid iron in the fluid outer core. We can learn about how planets generate this magnetic field by numerically simulating this fluid motion with supercomputers. Unfortunately, even with the largest clusters we are still very far from accurately simulating the dynamics of planetary cores.</p>
+
+  <p>One way around this is to make certain simplifications. For example, fluid motion in rotating fluid systems can be thought of as quasi-two dimensional. If we simulate a two-dimensional, instead of a three-dimensional fluid, we can get closer to the correct parameter regime. To this end, I wrote a numerical model in Python that simulates an incompressible fluid in a rotating, two-dimensional shell. This would correspond to the fluid outer core of a planet. Below is a video of a simulation.</p>
+
+  <div class="video-wrap">
+    <iframe src="https://player.vimeo.com/video/108258197" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Simplified turbulence simulation"></iframe>
+  </div>
+
+  <p>This is a movie showing vorticity in a turbulent, 2D, rotating convective system. This is meant to approximate flow in the Earth's core, this represents a slice through the equator. The outer edge of the simulation corresponds to the core-mantle boundary and the white area in the middle is the solid inner core. In this plot, blue patches correspond to fluid parcels that are rotating counterclockwise and red patches correspond to fluid parcels that are rotating clockwise. The units are non-dimensional.</p>
+</main>
+
+<footer class="site-footer">
+  <a href="https://github.com/rvilim">GitHub</a>
+  <a href="https://www.linkedin.com/in/ryanvilim">LinkedIn</a>
+</footer>
+
+</body>
+</html>
