@@ -1,97 +1,43 @@
-/* ryanvilim.xyz — static replica for GitHub Pages */
-:root {
-  --text: #1a1a1a;
-  --muted: #666;
-  --accent: #2a7ae2;
-  --maxw: 760px;
-}
-
+/* ryanvilim.com — minimal homepage */
 * { box-sizing: border-box; }
-
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  color: var(--text);
-  background: #fff;
-  margin: 0;
-  line-height: 1.65;
-  font-size: 17px;
+margin: 0;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+color: #1a1a1a;
+background: #fff;
 }
-
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-.site-header {
-
-  padding: 1.6rem 1.2rem 1rem;
-  text-align: center;
+.home {
+min-height: 100svh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 1.1rem;
+padding: 1rem;
+text-align: center;
 }
-
-.site-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0 0 0.2rem;
+.avatar {
+width: min(46vw, 210px);
+height: auto;
+display: block;
 }
-.site-title a { color: var(--text); }
-.site-title a:hover { text-decoration: none; }
-
-.site-tagline {
-  color: var(--muted);
-  margin: 0 0 1rem;
-  font-size: 0.95rem;
+.greeting {
+font-size: 1.6rem;
+margin: 0;
 }
-
-.site-nav a {
-  margin: 0 0.9rem;
-  font-size: 1rem;
-  color: var(--text);
+.social {
+display: flex;
+gap: 1.4rem;
+align-items: center;
 }
-.site-nav a:hover { color: var(--accent); }
-
-main {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 2.5rem 1.2rem 4rem;
+.social a {
+color: #1a1a1a;
+display: inline-flex;
+line-height: 0;
 }
-
-h1 { font-size: 1.8rem; margin-top: 0; }
-h2 { font-size: 1.3rem; margin-top: 2.2rem; }
-
-figure { margin: 1.5rem 0; }
-figure img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+.social a:hover { color: #2a7ae2; }
+.social svg {
+width: 30px;
+height: 30px;
+fill: currentColor;
 }
-figcaption {
-  color: var(--muted);
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-}
-
-.project-list { list-style: none; padding: 0; }
-.project-list li { margin: 0.7rem 0; font-size: 1.1rem; }
-
-.video-wrap {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  margin: 1.5rem 0;
-}
-.video-wrap iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  border: 0;
-}
-
-.site-footer {
-
-  text-align: center;
-  padding: 1.5rem 1.2rem;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-.site-footer a { margin: 0 0.6rem; }
-
-.resume-block p, .pub p { margin: 0.4rem 0; }
-.job-title { font-weight: 700; margin-top: 1.6rem; }
