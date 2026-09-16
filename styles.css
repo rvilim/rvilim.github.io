@@ -17,8 +17,9 @@ padding: 1rem;
 text-align: center;
 }
 .avatar {
-width: min(46vw, 210px);
-height: auto;
+height: min(40vh, 280px);
+width: auto;
+max-width: 80vw;
 display: block;
 }
 .greeting {
